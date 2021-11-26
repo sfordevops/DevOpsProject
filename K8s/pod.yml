@@ -1,0 +1,14 @@
+# Desired state us written in yam formate , we call the file as menifest file 
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-devops-pod
+  lable:
+    app: devops
+spec:
+  containers:
+  - name: devops-class
+    image: sforcloud/devops-oct-image
+    ports:
+    - containerPort: 80
